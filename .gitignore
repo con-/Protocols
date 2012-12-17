@@ -1,0 +1,26 @@
+$ cat .gitignore
+
+# Can ignore specific files
+.DS_Store
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+Workspace/iOS/26Letters.xcodeproj/project.xcworkspace/xcuserdata/con.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcuserstate
+Protocols/.DS_Store
+
+Protocols/.DS_Store
