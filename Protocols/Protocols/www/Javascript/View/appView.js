@@ -24,10 +24,7 @@ var AppView = Backbone.View.extend({
 	},
 
 	createProtocol: function(event) {
-		console.log("1");
 		var value = $("#value").val();
-		console.log("2");
 		this.protocols.create({value: value, date: new Date().getTime()});
-		console.log("3");
 	}
 });

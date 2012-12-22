@@ -9,5 +9,6 @@ var Router = Backbone.Router.extend({
 	},
 
 	toHome: function() {
+		$("#navigator").html("<a href = '#stats'> stats </a>");
 	},
 });

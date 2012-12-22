@@ -6,7 +6,7 @@ var Protocol = Backbone.Model.extend({
 	// },
 
 	initialize: function() {
-		console.log("i");
+		
 	},
 
 	dateString: function() {
