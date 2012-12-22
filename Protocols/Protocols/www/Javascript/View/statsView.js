@@ -9,6 +9,7 @@ var StatsView = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html("<div> timeDiff value valueDiff </div>");
+		this.lastProtocol = null;
 		this.protocols.each(this.addProtocolView, this);
 	},
 

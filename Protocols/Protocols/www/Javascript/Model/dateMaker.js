@@ -1,6 +1,7 @@
 var DateMaker = Backbone.Model.extend({
 	
 	initialize: function(time) {
+
 		this.set("time", time);
 	},
 
@@ -22,8 +23,18 @@ var DateMaker = Backbone.Model.extend({
 		var hours = diff % 24;
 		diff -= hours;
 		diff /= 24;
-		var days = diff; 
+		var days = diff;
 
-		return days + "d " + hours + ":" + minutes + ":" + seconds;
+		return days + "d " + this.addLeadingZeros(hours, 2) + ":" + this.addLeadingZeros(minutes, 2) + ":" + this.addLeadingZeros(seconds, 2);
+	},
+
+	addLeadingZeros: function(number, size) {
+    	var string = number + "";
+    	
+    	while (string.length < size) {
+			string = "0" + string;
+		}
+
+    	return string;
 	}
 });
